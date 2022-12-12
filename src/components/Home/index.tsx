@@ -24,9 +24,9 @@ const Home = () => {
   return (
     <>
       <motion.div style={backgroundMotionStyle}>
-        <div className="test-component">
-          <section className="container">
-            <h2>Sección 1</h2>
+        <main className="home">
+          <section className="home__hero">
+            <h2>Hi! </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
               aliquid nihil illum ipsam quae labore alias possimus? Sit, eius
@@ -61,9 +61,9 @@ const Home = () => {
               officia ipsa ea.
             </p>
           </section>
-        </div>
+        </main>
 
-        <motion.div
+        {/* <motion.div
           ref={ref}
           className="box"
           animate={{ x, y }}
@@ -73,7 +73,7 @@ const Home = () => {
             stiffness: 100,
             restDelta: 0.001,
           }}
-        />
+        /> */}
       </motion.div>
     </>
   );
