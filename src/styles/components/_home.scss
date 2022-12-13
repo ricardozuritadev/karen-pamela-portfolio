@@ -1,6 +1,24 @@
+#scuba-diver {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 100px;
+  fill: black;
+}
+
+.container {
+  height: 100vh;
+}
+
 .home {
   text-align: center;
-  font-size: 5rem;
+
+  &__hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+  }
 }
 
 .text-white {

@@ -7,9 +7,28 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
+  font-size: 16px;
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #041d2c;
+}
+
+h2 {
+  font-family: 'Hind', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 300;
+  color: #041d2c;
 }
 
 ::-webkit-scrollbar {
