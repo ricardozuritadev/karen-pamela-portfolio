@@ -1,7 +1,7 @@
-import scubaDiverImg from '../assets/images/scuba.svg';
+import footerImg from '../assets/images/bottom.png';
 
 const images = {
-  scubaDiverImg,
+  footerImg,
 };
 
 export default images;
