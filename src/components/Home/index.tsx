@@ -1,12 +1,13 @@
 import { useRef } from 'react';
 import { useFollowPointer } from '../../hooks/use-follow-pointer';
+import { motion, useScroll, useTransform, MotionValue } from 'framer-motion';
 
 import { useTranslation } from 'react-i18next';
 
-import { motion, useScroll, useTransform, MotionValue } from 'framer-motion';
-
 import ScubaDiver from '../Scuba';
 import ProjectsContainer from '../ProjectsContainer';
+
+import images from '../../utils/imagesLoader';
 
 import { BackgroundMotionStyleType } from './types';
 
@@ -19,8 +20,8 @@ const Home = () => {
 
   const backgroundScrollColor: MotionValue = useTransform(
     scrollYProgress,
-    [0, 0.25, 0.5, 0.65, 1],
-    ['#FFFFFF', '#E7EAEB', '#1F343D', '#021A23', '#021A23']
+    [0, 0.25, 0.5, 1],
+    ['#FFFFFF', '#EDEDED', '#303030', '#161616']
   );
 
   const backgroundMotionStyle: BackgroundMotionStyleType = {
@@ -43,7 +44,9 @@ const Home = () => {
           </section>
           <section className="container"></section>
           <section className="container text-white2"></section>
-          <section className="text-white"></section>
+          <section className="footer container text-white">
+            <img src={images.footerImg} alt="footer" className="footer__img" />
+          </section>
         </main>
 
         {/* <motion.div
