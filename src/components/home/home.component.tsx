@@ -1,15 +1,16 @@
 import { useRef } from 'react';
-import { useFollowPointer } from '../../hooks/use-follow-pointer';
+import { useFollowPointer } from 'hooks/use-follow-pointer';
 import { motion, useScroll, useTransform, MotionValue } from 'framer-motion';
 
 import { useTranslation } from 'react-i18next';
 
-import ScubaDiver from '../scuba/scuba.component';
-import ProjectsContainer from '../projects-container/projects-container.component';
+import ScubaDiver from 'components/scuba/scuba.component';
+import ProjectsContainer from 'components/projects-container/projects-container.component';
+import ChallengesContainer from 'components/challenges-container/challenges-container.component';
 
-import images from '../../utils/imagesLoader';
+import images from 'utils/imagesLoader';
 
-import { BackgroundMotionStyleType } from './types';
+import { BackgroundMotionStyleType } from 'types/home.types';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -44,7 +45,7 @@ const Home = () => {
           </section>
           <section className="empty-section"></section>
           <section className="home__challenges container">
-            <ProjectsContainer />
+            <ChallengesContainer />
           </section>
           <section className="container text-white2"></section>
           <section className="footer container text-white">
