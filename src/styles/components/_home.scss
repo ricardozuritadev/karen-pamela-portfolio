@@ -28,3 +28,14 @@
 .text-white2 {
   color: #ffffff;
 }
+
+.footer {
+  position: relative;
+  z-index: 100;
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}

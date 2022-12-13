@@ -1,7 +1,41 @@
 .project-card {
-  background-image: url('../../assets/images/pro1.png');
+  cursor: pointer;
   background-position: center;
   background-repeat: no-repeat;
-  width: 20rem;
-  height: 25rem;
+  filter: grayscale(100%);
+  width: 69rem;
+  height: 50%;
+  transition: all 0.15s;
+
+  &--zensave {
+    background-image: url('../../../public/images/zensave.png');
+
+    &:hover {
+      filter: none;
+    }
+  }
+
+  &--goodtrade {
+    background-image: url('../../../public/images/goodtrade.png');
+
+    &:hover {
+      filter: none;
+    }
+  }
+
+  &--kukara {
+    background-image: url('../../../public/images/kukara.png');
+
+    &:hover {
+      filter: none;
+    }
+  }
+
+  &--storytell {
+    background-image: url('../../../public/images/storytell.png');
+
+    &:hover {
+      filter: none;
+    }
+  }
 }

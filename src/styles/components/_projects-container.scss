@@ -1,2 +1,18 @@
-.projects-container {
+.projects {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  height: 100%;
+
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__title {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
 }
