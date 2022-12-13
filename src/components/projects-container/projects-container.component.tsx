@@ -8,7 +8,7 @@ import {
 
 import { useTranslation } from 'react-i18next';
 
-import ProjectCard from '../project-card/project-card.component';
+import ProjectCard from 'components/project-card/project-card.component';
 
 const ProjectsContainer = () => {
   const { t } = useTranslation();
