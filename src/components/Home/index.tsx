@@ -1,66 +1,49 @@
 import { useRef } from 'react';
 import { useFollowPointer } from '../../hooks/use-follow-pointer';
 
+import { useTranslation } from 'react-i18next';
+
 import { motion, useScroll, useTransform, MotionValue } from 'framer-motion';
+
+import ScubaDiver from '../Scuba';
+import ProjectsContainer from '../ProjectsContainer';
 
 import { BackgroundMotionStyleType } from './types';
 
 const Home = () => {
+  const { t } = useTranslation();
   const ref = useRef(null);
   const { x, y } = useFollowPointer(ref);
 
   const { scrollYProgress } = useScroll();
 
-  const scrollColor: MotionValue = useTransform(
+  const backgroundScrollColor: MotionValue = useTransform(
     scrollYProgress,
-    [0, 0.9],
-    ['#ededed', '#080808']
+    [0, 0.25, 0.5, 0.65, 1],
+    ['#FFFFFF', '#E7EAEB', '#1F343D', '#021A23', '#021A23']
   );
 
   const backgroundMotionStyle: BackgroundMotionStyleType = {
-    backgroundColor: scrollColor,
+    backgroundColor: backgroundScrollColor,
   };
 
   return (
     <>
       <motion.div style={backgroundMotionStyle}>
         <main className="home">
-          <section className="home__hero">
-            <h2>Hi! </h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              aliquid nihil illum ipsam quae labore alias possimus? Sit, eius
-              accusamus odit veritatis saepe, iusto dolorem est, maxime placeat
-              officia ipsa ea.
-            </p>
+          <ScubaDiver />
+
+          <section className="home__hero container">
+            <h2>{t('APP.HOME.HI')}</h2>
+            <h1>{t('APP.HOME.DESIGNER')}</h1>
           </section>
+
           <section className="container">
-            <h2>Sección 2</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              aliquid nihil illum ipsam quae labore alias possimus? Sit, eius
-              accusamus odit veritatis saepe, iusto dolorem est, maxime placeat
-              officia ipsa ea.
-            </p>
+            <ProjectsContainer />
           </section>
-          <section className="container text-white2">
-            <h2>Sección 3</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              aliquid nihil illum ipsam quae labore alias possimus? Sit, eius
-              accusamus odit veritatis saepe, iusto dolorem est, maxime placeat
-              officia ipsa ea.
-            </p>
-          </section>
-          <section className="text-white">
-            <h2>Sección 4</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              aliquid nihil illum ipsam quae labore alias possimus? Sit, eius
-              accusamus odit veritatis saepe, iusto dolorem est, maxime placeat
-              officia ipsa ea.
-            </p>
-          </section>
+          <section className="container"></section>
+          <section className="container text-white2"></section>
+          <section className="text-white"></section>
         </main>
 
         {/* <motion.div
