@@ -2,7 +2,8 @@
   "APP": {
     "HOME": {
       "HI": "Hola! Soy Karen",
-      "DESIGNER": "Diseñadora Ux Ui"
+      "DESIGNER": "Diseñadora Ux Ui",
+      "PROJECTS": "Proyectos"
     }
   }
 }
