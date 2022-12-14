@@ -9,8 +9,8 @@ const ScubaDiver = () => {
 
   const scubaScrollColor: MotionValue = useTransform(
     scrollYProgress,
-    [0, 0.5, 1],
-    ['#161616', '#161616', '#FFFFFF']
+    [0, 0.3, 0.4, 0.6],
+    ['#161616', '#161616', '#EDEDED', '#FFFFFF']
   );
 
   const scubaDiverMotionStyle: ScubaDiverMotionStyleType = {
