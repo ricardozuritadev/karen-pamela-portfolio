@@ -1,16 +1,26 @@
+import { useTranslation } from 'react-i18next';
+
 type ProjectCardProps = {
   backgroundImg: string;
   title: string;
   description: string;
-  tags: string[];
+  role: string;
+  projectType?: string | null;
+  duration: number;
+  tagsColor: 'yellow' | 'cyan' | 'green' | 'turquoise';
 };
 
 const ProjectCard = ({
   backgroundImg,
   title,
   description,
-  tags,
+  role,
+  projectType,
+  duration,
+  tagsColor,
 }: ProjectCardProps) => {
+  const { t } = useTranslation();
+
   return (
     <div className={`project-card project-card--${backgroundImg}`}>
       <div className={`project-card__details`}>
@@ -18,16 +28,22 @@ const ProjectCard = ({
           <img
             src={`/images/${title}.png`}
             alt=""
-            className="project-card__title"
+            className={`project-card__title ${
+              title === 'goodtrade-title' || title === 'kukara-title'
+                ? 'project-card__title--big'
+                : ''
+            }`}
           />
         </div>
         <p className="project-card__description">{description}</p>
         <ul className="project-card__tags">
-          {tags.map((tag, i) => (
-            <li key={i} className="project-card__tag">
-              {tag}
-            </li>
-          ))}
+          <li className={`project-card__tag--${tagsColor}`}>{role}</li>
+          {projectType && (
+            <li className={`project-card__tag--${tagsColor}`}>{projectType}</li>
+          )}
+          <li className={`project-card__tag--${tagsColor}`}>
+            {`${duration} ${t('APP.TAGS.DURATION.DAYS')}`}
+          </li>
         </ul>
       </div>
     </div>
