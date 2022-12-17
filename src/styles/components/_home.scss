@@ -1,9 +1,17 @@
-#scuba-diver {
+#scuba-diver--left {
   position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 40%;
   left: 100px;
   fill: $color-black;
+  transform-origin: center;
+}
+
+#scuba-diver--right {
+  position: fixed;
+  top: 30%;
+  right: 100px;
+  fill: $color-white;
+  transform-origin: center;
 }
 
 .container {
