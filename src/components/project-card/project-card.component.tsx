@@ -20,7 +20,6 @@ const ProjectCard = ({
   tagsColor,
 }: ProjectCardProps) => {
   const { t } = useTranslation();
-  console.log('title', title);
 
   return (
     <div className={`project-card project-card--${backgroundImg}`}>
