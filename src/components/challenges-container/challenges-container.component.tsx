@@ -22,40 +22,51 @@ const ChallengesContainer = () => {
     <motion.div className="challenges" style={opacityMotionStyle}>
       <div className="challenges__container">
         <div>
-          <ProjectCard
-            backgroundImg="samsung"
-            title="samsung-title"
-            description={t('APP.CHALLENGES.SAMSUNG.DESCRIPTION')}
-            role={t('APP.TAGS.ROLE.DESIGNER')}
-            duration={14}
-            tagsColor="yellow"
-          />
-          <ProjectCard
-            backgroundImg="roady"
-            title="roady-title"
-            description={t('APP.CHALLENGES.ROADY.DESCRIPTION')}
-            role={t('APP.TAGS.ROLE.DESIGNER')}
-            duration={14}
-            tagsColor="cyan"
-          />
+          <a href="#">
+            <ProjectCard
+              backgroundImg="samsung"
+              title="samsung-title"
+              description={t('APP.CHALLENGES.SAMSUNG.DESCRIPTION')}
+              role={t('APP.TAGS.ROLE.UIDESIGNER')}
+              duration={3}
+              tagsColor="yellow"
+            />
+          </a>
+
+          <a href="#">
+            <ProjectCard
+              backgroundImg="roady"
+              title="roady-title"
+              description={t('APP.CHALLENGES.ROADY.DESCRIPTION')}
+              role={t('APP.TAGS.ROLE.UXUIDESIGNER')}
+              duration={2}
+              tagsColor="cyan"
+            />
+          </a>
         </div>
+
         <div>
-          <ProjectCard
-            backgroundImg="seat"
-            title="seat-title"
-            description={t('APP.CHALLENGES.SEAT.DESCRIPTION')}
-            role={t('APP.TAGS.ROLE.DESIGNER')}
-            duration={14}
-            tagsColor="green"
-          />
-          <ProjectCard
-            backgroundImg="bosquia"
-            title="bosquia-title"
-            description={t('APP.CHALLENGES.BOSQUIA.DESCRIPTION')}
-            role={t('APP.TAGS.ROLE.DESIGNER')}
-            duration={14}
-            tagsColor="turquoise"
-          />
+          <a href="#">
+            <ProjectCard
+              backgroundImg="seat"
+              title="seat-title"
+              description={t('APP.CHALLENGES.SEAT.DESCRIPTION')}
+              role={t('APP.TAGS.ROLE.UIDESIGNER')}
+              duration={1}
+              tagsColor="orange"
+            />
+          </a>
+
+          <a href="#">
+            <ProjectCard
+              backgroundImg="bosquia"
+              title="bosquia-title"
+              description={t('APP.CHALLENGES.BOSQUIA.DESCRIPTION')}
+              role={t('APP.TAGS.ROLE.UIDESIGNER')}
+              duration={3}
+              tagsColor="turquoise"
+            />
+          </a>
         </div>
       </div>
 
