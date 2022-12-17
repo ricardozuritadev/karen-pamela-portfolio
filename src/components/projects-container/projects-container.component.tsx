@@ -32,28 +32,40 @@ const ProjectsContainer = () => {
           <ProjectCard
             backgroundImg="zensave"
             title="zensave-title"
-            description="App Design | Savings though payments & Retirement"
-            tags={['ux/ui designer', 'individual', '14 días']}
+            description={t('APP.PROJECTS.ZENSAVE.DESCRIPTION')}
+            role={t('APP.TAGS.ROLE.DESIGNER')}
+            projectType={t('APP.TAGS.TYPE.INDIVIDUAL')}
+            duration={14}
+            tagsColor="yellow"
           />
           <ProjectCard
             backgroundImg="kukara"
-            title="Kukaramakara"
-            description="App Design | Savings though payments & Retirement"
-            tags={['ux/ui designer', 'individual', '14 días']}
+            title="kukara-title"
+            description={t('APP.PROJECTS.KUKARA.DESCRIPTION')}
+            role={t('APP.TAGS.ROLE.DESIGNER')}
+            projectType={t('APP.TAGS.TYPE.INDIVIDUAL')}
+            duration={14}
+            tagsColor="cyan"
           />
         </div>
         <div>
           <ProjectCard
             backgroundImg="goodtrade"
-            title="Good Trade"
-            description="App Design | Savings though payments & Retirement"
-            tags={['ux/ui designer', 'individual', '14 días']}
+            title="goodtrade-title"
+            description={t('APP.PROJECTS.GOODTRADE.DESCRIPTION')}
+            role={t('APP.TAGS.ROLE.DESIGNER')}
+            projectType={t('APP.TAGS.TYPE.INDIVIDUAL')}
+            duration={14}
+            tagsColor="green"
           />
           <ProjectCard
             backgroundImg="storytell"
-            title="Storytell"
-            description="App Design | Savings though payments & Retirement"
-            tags={['ux/ui designer', 'individual', '14 días']}
+            title="storytell-title"
+            description={t('APP.PROJECTS.STORYTELL.DESCRIPTION')}
+            role={t('APP.TAGS.ROLE.DESIGNER')}
+            projectType={t('APP.TAGS.TYPE.INDIVIDUAL')}
+            duration={14}
+            tagsColor="turquoise"
           />
         </div>
       </div>
