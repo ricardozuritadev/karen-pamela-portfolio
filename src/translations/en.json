@@ -5,6 +5,45 @@
       "DESIGNER": "Ux Ui Designer",
       "PROJECTS": "Projects",
       "CHALLENGES": "Challenges"
+    },
+    "TAGS": {
+      "ROLE": {
+        "DESIGNER": "Ux Ui Designer"
+      },
+      "TYPE": {
+        "INDIVIDUAL": "Individual"
+      },
+      "DURATION": {
+        "DAYS": "Days"
+      }
+    },
+    "PROJECTS": {
+      "ZENSAVE": {
+        "DESCRIPTION": "App design | Savings through payments and retirement"
+      },
+      "GOODTRADE": {
+        "DESCRIPTION": "Web design | Digital volunteering"
+      },
+      "KUKARA": {
+        "DESCRIPTION": "Web redesign | Restaurant"
+      },
+      "STORYTELL": {
+        "DESCRIPTION": "New feature | Audio-books & e-books"
+      }
+    },
+    "CHALLENGES": {
+      "SAMSUNG": {
+        "DESCRIPTION": "Landing page design and layout | Christmas campaign"
+      },
+      "SEAT": {
+        "DESCRIPTION": "Home screen redesign | HMI"
+      },
+      "ROADY": {
+        "DESCRIPTION": "App Design | Hackathon"
+      },
+      "BOSQUIA": {
+        "DESCRIPTION": "Responsive web redesign"
+      }
     }
   }
 }

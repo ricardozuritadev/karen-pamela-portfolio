@@ -5,6 +5,45 @@
       "DESIGNER": "Diseñadora Ux Ui",
       "PROJECTS": "Proyectos",
       "CHALLENGES": "Desafíos"
+    },
+    "TAGS": {
+      "ROLE": {
+        "DESIGNER": "Diseñadora Ux Ui"
+      },
+      "TYPE": {
+        "INDIVIDUAL": "Individual"
+      },
+      "DURATION": {
+        "DAYS": "Días"
+      }
+    },
+    "PROJECTS": {
+      "ZENSAVE": {
+        "DESCRIPTION": "Diseño de app | Ahorros mediante pagos y jubilación"
+      },
+      "GOODTRADE": {
+        "DESCRIPTION": "Diseño web | Voluntariado digital"
+      },
+      "KUKARA": {
+        "DESCRIPTION": "Rediseño web | Restaurante"
+      },
+      "STORYTELL": {
+        "DESCRIPTION": "Nueva funcionalidad | E-books y audio-libros"
+      }
+    },
+    "CHALLENGES": {
+      "SAMSUNG": {
+        "DESCRIPTION": "Diseño y maquetación de landing page | Campaña Navidad"
+      },
+      "SEAT": {
+        "DESCRIPTION": "Rediseño de la pantalla de inicio | HMI"
+      },
+      "ROADY": {
+        "DESCRIPTION": "Diseño de app | BI Hackathon"
+      },
+      "BOSQUIA": {
+        "DESCRIPTION": "Rediseño web responsive"
+      }
     }
   }
 }
