@@ -1,10 +1,4 @@
-import {
-  motion,
-  useScroll,
-  useTransform,
-  MotionValue,
-  transform,
-} from 'framer-motion';
+import { motion, useScroll, useTransform, MotionValue } from 'framer-motion';
 
 import { useTranslation } from 'react-i18next';
 
@@ -26,7 +20,6 @@ const ChallengesContainer = () => {
 
   return (
     <motion.div className="challenges" style={opacityMotionStyle}>
-      <h2 className="challenges__title">{t('APP.HOME.CHALLENGES')}</h2>
       <div className="challenges__container">
         <div>
           <ProjectCard
@@ -57,6 +50,8 @@ const ChallengesContainer = () => {
           />
         </div>
       </div>
+
+      <h2 className="challenges__title">{t('APP.HOME.CHALLENGES')}</h2>
     </motion.div>
   );
 };
