@@ -165,18 +165,46 @@
     width: 40rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
+
+    &--big {
+      width: 50rem;
+    }
   }
 
   &__description {
     margin-bottom: 6rem;
   }
 
-  &__tag::before {
+  &__tag--yellow::before {
     content: '..';
-    color: $color-tags;
-    background-color: $color-tags;
     border-radius: 40px;
     margin-right: 5px;
+    color: $color-tag-yellow;
+    background-color: $color-tag-yellow;
+  }
+
+  &__tag--cyan::before {
+    content: '..';
+    border-radius: 40px;
+    margin-right: 5px;
+    color: $color-tag-cyan;
+    background-color: $color-tag-cyan;
+  }
+
+  &__tag--green::before {
+    content: '..';
+    border-radius: 40px;
+    margin-right: 5px;
+    color: $color-tag-green;
+    background-color: $color-tag-green;
+  }
+
+  &__tag--turquoise::before {
+    content: '..';
+    border-radius: 40px;
+    margin-right: 5px;
+    color: $color-tag-turquoise;
+    background-color: $color-tag-turquoise;
   }
 
   &__tags {
