@@ -23,30 +23,38 @@ const ChallengesContainer = () => {
       <div className="challenges__container">
         <div>
           <ProjectCard
-            backgroundImg="seat"
-            title="Seat"
-            description="App Design | Savings though payments & Retirement"
-            tags={['ux/ui designer', 'individual', '14 días']}
+            backgroundImg="samsung"
+            title="samsung-title"
+            description={t('APP.CHALLENGES.SAMSUNG.DESCRIPTION')}
+            role={t('APP.TAGS.ROLE.DESIGNER')}
+            duration={14}
+            tagsColor="yellow"
           />
           <ProjectCard
-            backgroundImg="bosquia"
-            title="Bosquia"
-            description="App Design | Savings though payments & Retirement"
-            tags={['ux/ui designer', 'individual', '14 días']}
+            backgroundImg="roady"
+            title="roady-title"
+            description={t('APP.CHALLENGES.ROADY.DESCRIPTION')}
+            role={t('APP.TAGS.ROLE.DESIGNER')}
+            duration={14}
+            tagsColor="cyan"
           />
         </div>
         <div>
           <ProjectCard
-            backgroundImg="samsung"
-            title="Samsung"
-            description="App Design | Savings though payments & Retirement"
-            tags={['ux/ui designer', 'individual', '14 días']}
+            backgroundImg="seat"
+            title="seat-title"
+            description={t('APP.CHALLENGES.SEAT.DESCRIPTION')}
+            role={t('APP.TAGS.ROLE.DESIGNER')}
+            duration={14}
+            tagsColor="green"
           />
           <ProjectCard
-            backgroundImg="roady"
-            title="Roady"
-            description="App Design | Savings though payments & Retirement"
-            tags={['ux/ui designer', 'individual', '14 días']}
+            backgroundImg="bosquia"
+            title="bosquia-title"
+            description={t('APP.CHALLENGES.BOSQUIA.DESCRIPTION')}
+            role={t('APP.TAGS.ROLE.DESIGNER')}
+            duration={14}
+            tagsColor="turquoise"
           />
         </div>
       </div>
