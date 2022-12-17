@@ -14,7 +14,13 @@ const ProjectCard = ({
   return (
     <div className={`project-card project-card--${backgroundImg}`}>
       <div className={`project-card__details`}>
-        <h2 className="project-card__title">{title}</h2>
+        <div>
+          <img
+            src={`/images/${title}.png`}
+            alt=""
+            className="project-card__title"
+          />
+        </div>
         <p className="project-card__description">{description}</p>
         <ul className="project-card__tags">
           {tags.map((tag, i) => (
