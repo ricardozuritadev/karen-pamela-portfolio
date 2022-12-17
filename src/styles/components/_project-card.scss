@@ -166,8 +166,12 @@
     margin-top: 2rem;
     margin-bottom: 1rem;
 
-    &--big {
+    &--bigger {
       width: 50rem;
+    }
+
+    &--smaller {
+      width: 28rem;
     }
   }
 
@@ -191,12 +195,12 @@
     background-color: $color-tag-cyan;
   }
 
-  &__tag--green::before {
+  &__tag--purple::before {
     content: '..';
     border-radius: 40px;
     margin-right: 5px;
-    color: $color-tag-green;
-    background-color: $color-tag-green;
+    color: $color-tag-purple;
+    background-color: $color-tag-purple;
   }
 
   &__tag--turquoise::before {
@@ -205,6 +209,14 @@
     margin-right: 5px;
     color: $color-tag-turquoise;
     background-color: $color-tag-turquoise;
+  }
+
+  &__tag--orange::before {
+    content: '..';
+    border-radius: 40px;
+    margin-right: 5px;
+    color: $color-tag-orange;
+    background-color: $color-tag-orange;
   }
 
   &__tags {
