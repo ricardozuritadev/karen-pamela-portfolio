@@ -3,7 +3,7 @@
   top: 50%;
   transform: translateY(-50%);
   left: 100px;
-  fill: black;
+  fill: $color-black;
 }
 
 .container {
@@ -22,11 +22,11 @@
 }
 
 .text-white {
-  color: #ffffff;
+  color: $color-white;
 }
 
 .text-white2 {
-  color: #ffffff;
+  color: $color-white;
 }
 
 .footer {

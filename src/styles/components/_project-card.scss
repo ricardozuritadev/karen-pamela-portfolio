@@ -1,6 +1,6 @@
 .project-card {
   cursor: pointer;
-  color: white;
+  color: $color-white;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -12,49 +12,137 @@
 
   &--zensave {
     background-image: url('images/zensave.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     &:hover {
       filter: none;
+      transition: all 0.4s ease-in 0.15s;
     }
 
     &:hover .project-card__details {
-      transform: translateY(0);
+      opacity: 1;
+      transition: all 0.2s ease-in 0.15s;
     }
   }
 
   &--goodtrade {
     background-image: url('images/goodtrade.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     &:hover {
       filter: none;
+      transition: all 0.4s ease-in 0.15s;
     }
 
     &:hover .project-card__details {
-      transform: translateY(0);
+      opacity: 1;
+      transition: all 0.2s ease-in 0.15s;
     }
   }
 
   &--kukara {
     background-image: url('images/kukara.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     &:hover {
       filter: none;
+      transition: all 0.4s ease-in 0.15s;
     }
 
     &:hover .project-card__details {
-      transform: translateY(0);
+      opacity: 1;
+      transition: all 0.2s ease-in 0.15s;
     }
   }
 
   &--storytell {
     background-image: url('images/storytell.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     &:hover {
       filter: none;
+      transition: all 0.4s ease-in 0.15s;
     }
 
     &:hover .project-card__details {
-      transform: translateY(0);
+      opacity: 1;
+      transition: all 0.2s ease-in 0.15s;
+    }
+  }
+
+  &--bosquia {
+    background-image: url('images/bosquia.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &:hover {
+      filter: none;
+      transition: all 0.4s ease-in 0.15s;
+    }
+
+    &:hover .project-card__details {
+      opacity: 1;
+      transition: all 0.2s ease-in 0.15s;
+    }
+  }
+
+  &--samsung {
+    background-image: url('images/samsung.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &:hover {
+      filter: none;
+      transition: all 0.4s ease-in 0.15s;
+    }
+
+    &:hover .project-card__details {
+      opacity: 1;
+      transition: all 0.2s ease-in 0.15s;
+    }
+  }
+
+  &--seat {
+    background-image: url('images/seat.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &:hover {
+      filter: none;
+      transition: all 0.4s ease-in 0.15s;
+    }
+
+    &:hover .project-card__details {
+      opacity: 1;
+      transition: all 0.2s ease-in 0.15s;
+    }
+  }
+
+  &--roady {
+    background-image: url('images/roady.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &:hover {
+      filter: none;
+      transition: all 0.4s ease-in 0.15s;
+    }
+
+    &:hover .project-card__details {
+      opacity: 1;
+      transition: all 0.2s ease-in 0.15s;
     }
   }
 
@@ -63,30 +151,30 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1.3rem;
+    gap: 1rem;
     width: 100%;
-    height: 23rem;
+    height: 100%;
     background: rgba(38, 38, 38, 0.7);
     backdrop-filter: blur(10.8px);
     bottom: 0;
-    transform: translateY(23rem);
-    transition: all 0.4s;
+    opacity: 0;
+    transition: all 0.2s ease-in;
   }
 
   &__title {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    width: 40rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
 
   &__description {
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
   }
 
   &__tag::before {
     content: '..';
-    color: #73ffff;
-    background-color: #73ffff;
+    color: $color-tags;
+    background-color: $color-tags;
     border-radius: 40px;
     margin-right: 5px;
   }
