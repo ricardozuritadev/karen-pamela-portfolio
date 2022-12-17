@@ -8,8 +8,6 @@ import ScubaDiver from 'components/scuba/scuba.component';
 import ProjectsContainer from 'components/projects-container/projects-container.component';
 import ChallengesContainer from 'components/challenges-container/challenges-container.component';
 
-import images from 'utils/imagesLoader';
-
 import { BackgroundMotionStyleType } from 'types/home.types';
 
 const Home = () => {
@@ -49,7 +47,11 @@ const Home = () => {
           </section>
           <section className="container text-white2"></section>
           <section className="footer container text-white">
-            <img src={images.footerImg} alt="footer" className="footer__img" />
+            <img
+              src="/images/bottom.png"
+              alt="footer"
+              className="footer__img"
+            />
           </section>
         </main>
 
