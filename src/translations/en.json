@@ -8,10 +8,12 @@
     },
     "TAGS": {
       "ROLE": {
-        "DESIGNER": "Ux Ui Designer"
+        "UXUIDESIGNER": "Ux Ui Designer",
+        "UIDESIGNER": "Ui Designer"
       },
       "TYPE": {
-        "INDIVIDUAL": "Individual"
+        "INDIVIDUAL": "Individual",
+        "TEAM": "Team work"
       },
       "DURATION": {
         "DAYS": "Days"
