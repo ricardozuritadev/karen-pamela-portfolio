@@ -7,7 +7,7 @@ type ProjectCardProps = {
   role: string;
   projectType?: string | null;
   duration: number;
-  tagsColor: 'yellow' | 'cyan' | 'green' | 'turquoise';
+  tagsColor: 'yellow' | 'cyan' | 'green' | 'turquoise' | 'purple' | 'orange';
 };
 
 const ProjectCard = ({
@@ -20,6 +20,7 @@ const ProjectCard = ({
   tagsColor,
 }: ProjectCardProps) => {
   const { t } = useTranslation();
+  console.log('title', title);
 
   return (
     <div className={`project-card project-card--${backgroundImg}`}>
@@ -30,7 +31,9 @@ const ProjectCard = ({
             alt=""
             className={`project-card__title ${
               title === 'goodtrade-title' || title === 'kukara-title'
-                ? 'project-card__title--big'
+                ? 'project-card__title--bigger'
+                : '' || title === 'seat-title' || title === 'roady-title'
+                ? 'project-card__title--smaller'
                 : ''
             }`}
           />
