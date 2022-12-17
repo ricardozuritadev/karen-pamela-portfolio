@@ -31,7 +31,7 @@ const ProjectsContainer = () => {
         <div>
           <ProjectCard
             backgroundImg="zensave"
-            title="Zensave"
+            title="zensave-title"
             description="App Design | Savings though payments & Retirement"
             tags={['ux/ui designer', 'individual', '14 días']}
           />
