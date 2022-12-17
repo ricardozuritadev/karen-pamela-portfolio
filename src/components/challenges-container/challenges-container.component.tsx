@@ -30,28 +30,28 @@ const ChallengesContainer = () => {
       <div className="challenges__container">
         <div>
           <ProjectCard
-            backgroundImg="zensave"
-            title="Zensave"
+            backgroundImg="seat"
+            title="Seat"
             description="App Design | Savings though payments & Retirement"
             tags={['ux/ui designer', 'individual', '14 días']}
           />
           <ProjectCard
-            backgroundImg="kukara"
-            title="Kukaramakara"
+            backgroundImg="bosquia"
+            title="Bosquia"
             description="App Design | Savings though payments & Retirement"
             tags={['ux/ui designer', 'individual', '14 días']}
           />
         </div>
         <div>
           <ProjectCard
-            backgroundImg="goodtrade"
-            title="Good Trade"
+            backgroundImg="samsung"
+            title="Samsung"
             description="App Design | Savings though payments & Retirement"
             tags={['ux/ui designer', 'individual', '14 días']}
           />
           <ProjectCard
-            backgroundImg="storytell"
-            title="Storytell"
+            backgroundImg="roady"
+            title="Roady"
             description="App Design | Savings though payments & Retirement"
             tags={['ux/ui designer', 'individual', '14 días']}
           />
