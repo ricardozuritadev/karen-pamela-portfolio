@@ -3,9 +3,11 @@
 @import 'general/mixins';
 @import 'general/animations';
 @import 'general/base';
+@import 'general/parallax';
 
 // Components styles
 @import 'components/home';
+@import 'components/scuba-diver';
 @import 'components/project-card';
 @import 'components/projects-container';
 @import 'components/challenges-container';

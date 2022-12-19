@@ -1,0 +1,14 @@
+.scuba-diver {
+  position: fixed;
+  transform-origin: center;
+
+  &--left {
+    top: 40%;
+    left: 100px;
+  }
+
+  &--right {
+    top: 30%;
+    right: 100px;
+  }
+}
