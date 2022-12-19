@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform, MotionValue } from 'framer-motion';
 
 import { useTranslation } from 'react-i18next';
 
+import Parallax from '../parallax/parallax.component';
 import ScubaDiver from 'components/scuba/scuba.component';
 import ProjectsContainer from 'components/projects-container/projects-container.component';
 import ChallengesContainer from 'components/challenges-container/challenges-container.component';
@@ -33,10 +34,12 @@ const Home = () => {
         <main className="home">
           <ScubaDiver />
 
-          <section className="home__hero container">
-            <h2>{t('APP.HOME.HI')}</h2>
-            <h1>{t('APP.HOME.DESIGNER')}</h1>
-          </section>
+          <Parallax offset={50}>
+            <section className="home__hero container">
+              <h2>{t('APP.HOME.HI')}</h2>
+              <h1>{t('APP.HOME.DESIGNER')}</h1>
+            </section>
+          </Parallax>
 
           <section className="home__projects container">
             <ProjectsContainer />
